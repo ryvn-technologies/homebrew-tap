@@ -5,21 +5,21 @@
 class Ryvn < Formula
   desc "Deploy to any customer cloud via a single control plane"
   homepage "https://ryvn.ai/"
-  version "0.26.0"
+  version "0.27.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/ryvn-technologies/ryvn-cli-release/releases/download/v0.26.0/ryvn-cli-release_Darwin_x86_64.tar.gz"
-      sha256 "09702f2d8069c15cd6b3270665fefa8dac2ea79bf9fb5cdc86e7ca01ce553687"
+      url "https://github.com/ryvn-technologies/ryvn-cli-release/releases/download/v0.27.0/ryvn-cli-release_Darwin_x86_64.tar.gz"
+      sha256 "5b17ce041cc8dfaa33a443b451a9a22f85b7913c6ed3900fe105a416bc270fa3"
 
       def install
         bin.install "ryvn"
       end
     end
     on_arm do
-      url "https://github.com/ryvn-technologies/ryvn-cli-release/releases/download/v0.26.0/ryvn-cli-release_Darwin_arm64.tar.gz"
-      sha256 "2b23e8363a8c45086371a805f22510c6f05b94211f83e53904932ea9b1dfad9a"
+      url "https://github.com/ryvn-technologies/ryvn-cli-release/releases/download/v0.27.0/ryvn-cli-release_Darwin_arm64.tar.gz"
+      sha256 "0d606a33495d0d060e40e0c73839303c1f558151d332b9917af96e8b91023fb1"
 
       def install
         bin.install "ryvn"
@@ -30,8 +30,8 @@ class Ryvn < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ryvn-technologies/ryvn-cli-release/releases/download/v0.26.0/ryvn-cli-release_Linux_x86_64.tar.gz"
-        sha256 "b8e391feee28aee7882d87d1a7f2ca6938f225d16d9270f649aede5170693751"
+        url "https://github.com/ryvn-technologies/ryvn-cli-release/releases/download/v0.27.0/ryvn-cli-release_Linux_x86_64.tar.gz"
+        sha256 "dbf4ccc75d04b4a12fc67506e9540d338a174f48cc0b9593df38bd74d9632cb0"
 
         def install
           bin.install "ryvn"
@@ -40,8 +40,8 @@ class Ryvn < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ryvn-technologies/ryvn-cli-release/releases/download/v0.26.0/ryvn-cli-release_Linux_arm64.tar.gz"
-        sha256 "8e4b2c70400f4973309e466ff757f723c0b3385e75258352d405f2907c9000f0"
+        url "https://github.com/ryvn-technologies/ryvn-cli-release/releases/download/v0.27.0/ryvn-cli-release_Linux_arm64.tar.gz"
+        sha256 "47d7e67ab79b1b62f2d41c7386b4d1800eeda9eefa28510d1bec0cda06c1e517"
 
         def install
           bin.install "ryvn"
